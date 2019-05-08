@@ -4,6 +4,7 @@
 From NPM:
 
 $ npm install nightwatch
+
 From GitHub:
 
 $ git clone https://github.com/nightwatchjs/nightwatch.git
