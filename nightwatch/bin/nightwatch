@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+require('C:/Users/Lohit/Desktop/ww/node_modules/nightwatch/bin/runner.js');
+
