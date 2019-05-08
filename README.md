@@ -2,15 +2,15 @@
 
 # Install Nightwatch
 From NPM:
-
+```sh
 $ npm install nightwatch
-
+```
 From GitHub:
-
+```sh
 $ git clone https://github.com/nightwatchjs/nightwatch.git
 $ cd nightwatch
 $ npm install
-
+```
 # Download WebDriver
 Nightwatch uses a WebDriver compatible server to control the browser. WebDriver is a W3C specification and industry standard which provides a platform and HTTP protocol to interact with a browser.
 
