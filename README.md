@@ -22,3 +22,9 @@ download url: https://sites.google.com/a/chromium.org/chromedriver/downloads.
 GeckoDriver
 for running tests against the Mozilla Firefox browser;
 download url: https://github.com/mozilla/geckodriver/releases.
+
+# Install prompt-sync package (if you don't already have)
+```sh
+npm i prompt-sync
+```
+Reference Link: https://www.npmjs.com/package/prompt-sync
