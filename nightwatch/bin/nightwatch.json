@@ -1,98 +1,132 @@
 {
-  "src_folders" : ["./examples/tests", "./examples/mocha", "./examples/unittests"],
-  "output_folder" : "./examples/reports",
-  "custom_commands_path" : "./examples/custom-commands",
-  "custom_assertions_path" : "./examples/custom-assertions",
-  "page_objects_path" : "./examples/pages",
-  "globals_path" : "./examples/globalsModule.js",
-  "disable_colors": false,
-  "test_workers" : false,
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "",
+  "globals_path" : "./tests/globals.js",      
 
-  "webdriver" : {
-    "start_process": false,
-    "host": "localhost",
-    "port": 4444
+  "selenium" : {
+    "start_process" : false,
+    "server_path" : "",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./selenium/chromedriver",
+      "webdriver.gecko.driver" : "./selenium/geckodriver",
+      "webdriver.edge.driver" : "./selenium/MicrosoftWebDriver"
+    }
   },
 
   "test_settings" : {
-    "default" : {
-      "webdriver": {
-        "server_path": "./bin/geckodriver-0.20",
-        "cli_args": [
-          "--log", "debug"
-        ]
-      },
+
+    "cbt" : {
+      "launch_url" : "<launch_url_of_choice",
+      "selenium_port"  : 80,
+      "selenium_host"  : "hub.crossbrowsertesting.com",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+                      },
+      "username": "tripthi.shetty@socialmedialink.com",
+      "access_key": "u283c7d7d4fafeb7",
+      "desiredCapabilities": {
+        "acceptSslCerts": "1",
+        "browserName": "Chrome",
+        "version": "74",
+        "build": "1.0",
+        "javascriptEnabled": "1",
+        "name": "NightwatchJSExample",
+        "platform" : "Windows 10",
+        "record_network" : "true",
+        "record_video" : "true",
+        "screen_resolution" : "1366x768"
+                              }
+            },
+
+     "bs" : {
+      "launch_url" : "<launch_url_of_choice",
+      "selenium_port"  : 80,
+      "selenium_host"  : "hub-cloud.browserstack.com",
+      "acceptSslCerts": true,
+      
+
+      "desiredCapabilities": {
+        "browserstack.user": "tripthishetty1",
+        "browserstack.key": "X9L2MYuTqh7xVr1LQvHX",
+        "browser": "chrome"
+        
+                            }
+            },
+
+    "default" : {  
+      "launch_url" : "https://tripsprint88staging.staging.socialmedialink.com",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "silent" : true,
       "disable_colors": false,
       "screenshots" : {
         "enabled" : false,
         "path" : ""
-      },
-      "request_timeout_options": {
-        "timeout": 60000,
-        "retry_attempts": 5
-      },
-      "filter": ["./examples/tests"],
-      "desiredCapabilities" : {
-        "browserName" : "firefox",
-        "acceptInsecureCerts" : true
-      }
-    },
-
-    "chrome" : {
-      "webdriver": {
-        "port": 9515,
-        "default_path_prefix": "",
-        "server_path": "./bin/chromedriver-2.32",
-        "cli_args": [
-          "--verbose"
-        ]
-      },
+                      },
       "desiredCapabilities" : {
         "browserName" : "chrome",
-        "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
-      }
-    },
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+                              }
+                },
 
-    "unit_tests" : {
-      "unit_tests_mode" : true,
-      "filter" : "./examples/unittests/*",
-      "exclude" : ""
-    },
-
-    "mocha" : {
-      "webdriver" : {
-        "default_path_prefix": "",
-        "server_path": "./bin/chromedriver-2.32",
-        "cli_args": [
-          "--verbose"
-        ]
-      },
-      "desiredCapabilities" : {
-        "browserName" : "chrome"
-      },
-      "test_runner" : {
-        "type" : "mocha"
-      }
-    },
-
-    "selenium_server" : {
-      "selenium" : {
-        "start_process": true,
-        "host": "localhost",
-        "port": 4444,
-        "server_path": "./bin/selenium-server-standalone-3.10.0.jar",
-        "cli_args": {
-          "webdriver.gecko.driver": "./bin/geckodriver-0.19",
-          "webdriver.chrome.driver": "./bin/chromedriver-2.32"
-        }
-      },
-
+  "firefox" : {  
+      "launch_url" : "https://tripsprint88staging.staging.socialmedialink.com",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "silent" : true,
+      "disable_colors": false, 
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+                      },
       "desiredCapabilities" : {
         "browserName" : "firefox",
-        "acceptSslCerts": true
-      }
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+                              }
+              },
+
+"edge" : {  
+      "launch_url" : "https://tripsprint88staging.staging.socialmedialink.com",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "silent" : true,
+      "disable_colors": false, 
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+                      },
+      "desiredCapabilities" : {
+        "browserName" : "MicrosoftEdge",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+                            }
+          },
+"safari" : {  
+      "launch_url" : "https://tripsprint88staging.staging.socialmedialink.com",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "silent" : true,
+      "disable_colors": false, 
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+                      },
+      "desiredCapabilities" : {
+        "browserName" : "safari",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+                          }
+          }
+
     }
-  }
 }
-
-
