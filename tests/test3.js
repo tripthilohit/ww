@@ -33,5 +33,5 @@ return a[num-1]
 }
 
 
-var n = prompt('How many more times? ');
+var n = prompt('How many random numbers you want to generate?');
 console.log(smallestNumber(n))

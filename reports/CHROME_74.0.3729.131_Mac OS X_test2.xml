@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
-            tests="2">
+            failures="0"
+            tests="1">
 
   <testsuite name="test2"
-    errors="0" failures="1" hostname="" id="" package="test2" skipped="1"
-    tests="2" time="4.732" timestamp="Thu, 09 May 2019 17:20:34 GMT">
+    errors="0" failures="0" hostname="" id="" package="test2" skipped="0"
+    tests="1" time="11.08" timestamp="Fri, 10 May 2019 00:29:10 GMT">
   
-    <testcase name="usingSelectorsDemo" classname="test2" time="4.732" assertions="2">
+    <testcase name="usingSelectorsDemo" classname="test2" time="11.08" assertions="7">
 
-      <failure message="Testing if the page title equals &quot;Weight Loss Program, Recipes &amp; Help | Weight Watchers&quot;. after 1000 milliseconds.">    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:13:13)
-    at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>
@@ -20,13 +27,6 @@
 
   
 
-  
-    
-    <testcase
-      name="getTodaysHours" classname="test2">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>

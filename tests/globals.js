@@ -1,5 +1,5 @@
 var userNames = {
-  memberURL: 'https://2019sprint9.pre-live.socialmedialink.com',
+  URL: 'https://www.weightwatchers.com/us/',
 memberEmail: 'tyrion@yopmail.com',
   memberPassword: '12345678',
 }
@@ -7,7 +7,7 @@ memberEmail: 'tyrion@yopmail.com',
 module.exports = {
   // this controls whether to abort the test execution when an assertion failed and skip the rest
   // it's being used in waitFor commands and expect assertions
-  abortOnAssertionFailure: true,
+  //abortOnAssertionFailure: true,
 
   // this will overwrite the default polling interval (currently 500ms) for waitFor commands
   // and expect assertions that use retry

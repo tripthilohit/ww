@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test2"
+    errors="1" failures="0" hostname="" id="" package="test2" skipped="0"
+    tests="1" time="0.003000" timestamp="Thu, 09 May 2019 22:04:33 GMT">
+  
+    <testcase name="usingSelectorsDemo" classname="test2" time="0.003000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Test2 / usingSelectorsDemo]:
+
+  ReferenceError: title is not defined
+    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:18:27)
+    at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
