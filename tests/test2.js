@@ -1,4 +1,4 @@
-
+var prompt = require('prompt-sync')();
 var usingSelectorsDemo = function(driver)
 {
 driver
@@ -51,13 +51,35 @@ driver
 		console.log("TODAY's hours of operation:\n "+result.value)
 	})
 //9. Create a method to print the number of meeting the each person(under the scheduled time) has a particular day of the week
-e.g. printMeetings("Sun")
-Output should be:
-Person A  3
-Person B  1
-   	//.end()
+//e.g. printMeetings("Sun")
+//Output should be:
+//Person A  3
+//Person B  1
 
+var printMeetings = function(day)
+{
+
+	for(var i=1;i<=7;i++)
+		{		
+			var count = []
+			driver.getText("(//div[@class='schedule-detailed-day-label'])[i]",function(result)
+				{
+					if(result.value===day)
+						{
+							console.log("yes")
+						}
+						else
+						{
+							console.log("No HELLO HELLO")
+						}
+				})
+
+		}
 }
+var day1 = driver.globals.userNames.day
+printMeetings(day1)
+}
+
 
 
 module.exports={

@@ -5,9 +5,9 @@
 
   <testsuite name="test2"
     errors="1" failures="0" hostname="" id="" package="test2" skipped="0"
-    tests="1" time="0.003000" timestamp="Thu, 09 May 2019 22:04:33 GMT">
+    tests="1" time="2.822" timestamp="Fri, 10 May 2019 17:17:29 GMT">
   
-    <testcase name="usingSelectorsDemo" classname="test2" time="0.003000" assertions="0">
+    <testcase name="usingSelectorsDemo" classname="test2" time="2.822" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,8 @@
     <system-err>
         Error while running [Test2 / usingSelectorsDemo]:
 
-  ReferenceError: title is not defined
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:18:27)
+  TypeError: printMeetings is not a function
+    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:59:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
