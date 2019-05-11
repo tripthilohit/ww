@@ -1,5 +1,3 @@
-var prompt = require('prompt-sync')();
-
 var usingSelectorsDemo = function(driver)
 {
 driver
@@ -14,18 +12,9 @@ driver
    	.waitForElementVisible("//a[@class='find-a-meeting']")
    	.click("//a[@class='find-a-meeting']")
  //4. Verify loaded page title contains “Find WW Studios & Meetings Near You | WW USA”
-  		 /*	
-   			.getTitle((title) => {
-   			 driver.verify.containsText(title, 'Studios & Meetings Near You | WW USA')
-   				})
-   		*/
-   		/*
-   			.getTitle((title) => {
-   			driver.expect.element(title).text.to.equal("Studios & Meetings Near You | WW USA")})
-		*/
-	.getTitle(function(title){
-		this.assert.ok(title.includes("Studios & Meetings Near You | WW USA"))
-	})
+  	.getTitle(function(title){
+		this.assert.ok(title.includes("Find WW Studios & Meetings Near You | WW USA"))
+		})
 //5. In the search field, search for meetings for zip code: 10011
 	.waitForElementVisible("//input[@id='meetingSearch']")
 	.click("//input[@id='meetingSearch']")
@@ -54,53 +43,55 @@ driver
 
 }
 //9. Create a method to print the number of meeting the each person(under the scheduled time) has a particular day of the week
-//e.g. printMeetings("Sun")
-//Output should be:
-//Person A  3
-//Person B  1
-var hello = function(driver)
-{
- var printMeetings = function(day)
-{
-  var k
-	for(var i=1;i<=7;i++)
-		{	console.log("outout"+i)
-			driver.getText("(//div[@class='schedule-detailed-day-label'])["+i+"]",function(result)
+
+var printMeetings = function (driver) {
+    function getDaysCount(elements) {
+    	 elements.value.forEach(function (element,i) {
+			driver.elementIdText(element.ELEMENT, function (res) {
+            driver.getText("(//div[@class='schedule-detailed-day-label'])["+(i+1)+"]",function(result)
 				{
-					console.log(result.value)
-					if(result.value===day)
-						k=i
-					console.log(k)
-				})
-		}					
-	/*driver.elements("xpath","(//div[@class='schedule-detailed-day-meetings'])[3]/div",function(result)
-							{	console.log("in in"+i)
-								var c = 1
-								var res = result.value.length
-								console.log(res)
-								for(var j=1;j<=res;j++)
+					if(result.value===driver.globals.userNames.day)
+						{	
+							driver.elements('xpath', "(//div[@class='schedule-detailed-day'])["+(i+1)+"]/div[2]/div/div[2]", function(resu)
+							{	
+								var array = []
+								resu.value.forEach(function (element1,j) {
+        					driver.elementIdText(element1.ELEMENT, function (person) 
+        					{	
+								driver.getText("((//div[@class='schedule-detailed-day'])["+(i+1)+"]/div[2]/div/div[2])["+(j+1)+"]",function(personName)
 								{
-									 driver.getText("(//div[@class='schedule-detailed-day-meetings'])["+k+"]/div[1]/div["+j+"]",function(result)
-									{
-										console.log(result.value)
+									array.push(personName.value)
+									var result = {}
+									for(var k=0;k<array.length;k++)
+										{	
+										if(!result[array[k]])
+           								result[array[k]]=0;
+     							  		++result[array[k]];
+										}
+									//console.log(result)
+										if(array.length===resu.value.length)
+										{
+											for (var k in result){
+											console.log(k+" "+result[k]);
+										}}
 									})
-									
-								}
+								
+								})		
+					
 							})
-						}
-						
+           
+       						 })
+
+   						 }
+					})
 				})
-
-		}*/
-}
-
-printMeetings(driver.globals.userNames.day)
-}
-
-
+   	 		})
+      	}
+      driver.elements('xpath', "//div[@class='schedule-detailed-day']", getDaysCount)
+  }
 
 module.exports={
-	//usingSelectorsDemo: usingSelectorsDemo,
-	hello:hello
+	usingSelectorsDemo: usingSelectorsDemo,
+	printMeetings:printMeetings
+  }
 	
-}

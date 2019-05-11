@@ -13,14 +13,26 @@ var smallestNumber = function(range, n)
 		a[i]=Math.floor(Math.random() * 100000);
 		console.log("random numbers: "+a[i])
 	}
-	a.sort()
-	console.log(a)
-	console.log("The "+n+" smallest random number is: ")
-return a[n]
+	for (var j=0;j<range;j++)
+	{
+		for(var k=0;k<range;k++)
+		{
+			if(a[j]>a[k])
+			{
+				temp=a[j]
+				a[j]=a[k]
+				a[k]=temp
+
+
+			}
+		}
+		
+	}
+	console.log("The smaleest random number is: ")
+return a[range-1]
 
 }
 
-
-var range = prompt('How many random numbers you want to generate? ');
 var n = prompt("Type the index of the smallest random number: ")
+var range = prompt('How many random numbers you want to generate? ');
 console.log(smallestNumber(range,n))
