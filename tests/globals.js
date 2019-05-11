@@ -1,6 +1,6 @@
 var userNames = {
   URL: 'https://www.weightwatchers.com/us/',
-  day: 'MON',
+  day: 'TUE',
 memberEmail: 'tyrion@yopmail.com',
   memberPassword: '12345678'
 }

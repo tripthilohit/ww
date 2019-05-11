@@ -5,31 +5,17 @@
 
   <testsuite name="test2"
     errors="7" failures="0" hostname="" id="" package="test2" skipped="0"
-    tests="1" time="7.320" timestamp="Fri, 10 May 2019 17:34:28 GMT">
+    tests="1" time="0.9640" timestamp="Sat, 11 May 2019 00:52:22 GMT">
   
-    <testcase name="usingSelectorsDemo" classname="test2" time="7.320" assertions="7">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="hello" classname="test2" time="0.9640" assertions="0">
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+      ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[1]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -38,9 +24,9 @@
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[2]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -49,9 +35,9 @@ ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-labe
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[3]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -60,9 +46,9 @@ ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-labe
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[4]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -71,9 +57,9 @@ ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-labe
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[5]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -82,9 +68,9 @@ ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-labe
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[6]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -93,9 +79,9 @@ ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-labe
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[i]&quot; using: xpath
-    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:65:11)
-    at Object.usingSelectorsDemo (/Users/tripthishetty/Desktop/ww/tests/test2.js:80:1)
+ERROR: Unable to locate element: &quot;(//div[@class='schedule-detailed-day-label'])[7]&quot; using: css selector
+    at printMeetings (/Users/tripthishetty/Desktop/ww/tests/test2.js:68:11)
+    at Object.hello (/Users/tripthishetty/Desktop/ww/tests/test2.js:97:1)
     at Module.call (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthishetty/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthishetty/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)

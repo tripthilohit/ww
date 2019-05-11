@@ -1,4 +1,5 @@
 var prompt = require('prompt-sync')();
+
 var usingSelectorsDemo = function(driver)
 {
 driver
@@ -50,39 +51,56 @@ driver
 	{
 		console.log("TODAY's hours of operation:\n "+result.value)
 	})
+
+}
 //9. Create a method to print the number of meeting the each person(under the scheduled time) has a particular day of the week
 //e.g. printMeetings("Sun")
 //Output should be:
 //Person A  3
 //Person B  1
-
-var printMeetings = function(day)
+var hello = function(driver)
 {
-
+ var printMeetings = function(day)
+{
+  var k
 	for(var i=1;i<=7;i++)
-		{		
-			var count = []
-			driver.getText("(//div[@class='schedule-detailed-day-label'])[i]",function(result)
+		{	console.log("outout"+i)
+			driver.getText("(//div[@class='schedule-detailed-day-label'])["+i+"]",function(result)
 				{
+					console.log(result.value)
 					if(result.value===day)
-						{
-							console.log("yes")
+						k=i
+					console.log(k)
+				})
+		}					
+	/*driver.elements("xpath","(//div[@class='schedule-detailed-day-meetings'])[3]/div",function(result)
+							{	console.log("in in"+i)
+								var c = 1
+								var res = result.value.length
+								console.log(res)
+								for(var j=1;j<=res;j++)
+								{
+									 driver.getText("(//div[@class='schedule-detailed-day-meetings'])["+k+"]/div[1]/div["+j+"]",function(result)
+									{
+										console.log(result.value)
+									})
+									
+								}
+							})
 						}
-						else
-						{
-							console.log("No HELLO HELLO")
-						}
+						
 				})
 
-		}
+		}*/
 }
-var day1 = driver.globals.userNames.day
-printMeetings(day1)
+
+printMeetings(driver.globals.userNames.day)
 }
 
 
 
 module.exports={
-	usingSelectorsDemo: usingSelectorsDemo
+	//usingSelectorsDemo: usingSelectorsDemo,
+	hello:hello
 	
 }
