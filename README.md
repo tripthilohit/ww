@@ -28,3 +28,6 @@ download url: https://github.com/mozilla/geckodriver/releases.
 npm i prompt-sync
 ```
 Reference Link: https://www.npmjs.com/package/prompt-sync
+
+# Change the root path of the runner.js in nightwatch.js file
+In order ro run the driver succesfully make sure you have changed runner.js root path in nightwatch.js file.
