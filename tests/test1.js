@@ -22,7 +22,7 @@ doesFileExist(path)
 
 //replace - with ,
 fs.readFileSync('tests/dictionary.txt', 'utf8', function(err,data) {
-    if(err) throw err;
+    if(err) throw err
     var obj = {};
     var splitted = data.toString().split("\n");
     for (var i = 0; i<splitted.length; i++) {
