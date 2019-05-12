@@ -58,7 +58,7 @@ node nightwatch.js tests/test2.js
 
 ## Test 2
 
-<img width="766" alt="Screen Shot 2019-05-12 at 3 08 42 PM" src="https://user-images.githubusercontent.com/38136831/57586719-defdce00-74c7-11e9-99e5-694daf5c7a90.png">
+<img width="759" alt="Screen Shot 2019-05-12 at 3 18 03 PM" src="https://user-images.githubusercontent.com/38136831/57586797-351f4100-74c9-11e9-973f-983047a5be55.png">
 
 ## Test 3
 
