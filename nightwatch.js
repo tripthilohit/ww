@@ -2,7 +2,7 @@
 
 
 
-require('/Users/tripthishetty/Desktop/Nightwatch/nightwatch/bin/runner.js');
+require('/Users/tripthishetty/Desktop/ww/nightwatch/bin/runner.js');
 
 
 
