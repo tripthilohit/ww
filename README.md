@@ -45,7 +45,7 @@ In order to run the driver succesfully make sure you have changed runner.js root
   ```sh
   java -jar selenium.jar
   ```
-4. Open a new terminal and cd to thr root project folder (/.ww)
+4. Open a new terminal and cd to the root project folder (/.ww)
 ```sh
 node nightwatch.js tests/test2.js
 ```
