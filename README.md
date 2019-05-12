@@ -1,4 +1,9 @@
 # ww
+<b> What is Nightwatch?</b>
+
+Nightwatch is an automated testing framework for web applications and websites, written in Node.js and using the W3C WebDriver API (formerly Selenium WebDriver.
+
+It is a complete browser (End-to-End) testing solution which aims to simplify the process of setting up Continuous Integration and writing automated tests. Nightwatch can also be used for writing Node.js unit tests.
 
 # Install Nightwatch
 From NPM:
@@ -29,5 +34,19 @@ npm i prompt-sync
 ```
 Reference Link: https://www.npmjs.com/package/prompt-sync
 
-# Change the root path of the runner.js in nightwatch.js file
-In order ro run the driver succesfully make sure you have changed runner.js root path in nightwatch.js file.
+# How to run tests?
+
+1. Change the root path of the runner.js in nightwatch.js file (./ww/nightwatch.js)
+In order to run the driver succesfully make sure you have changed runner.js root path in nightwatch.js file.
+
+2. Change the user data (if required)in globals.js file (./ww/tests/globals.js)
+
+3. Start a selenium server by opening a terminal and cd into the folder that contains the chrome driver (.ww/selenium)
+  ```sh
+  java -jar selenium.jar
+  ```
+4. Open a new terminal and cd to thr root project folder (/.ww)
+```sh
+node nightwatch.js tests/test2.js
+```
+
