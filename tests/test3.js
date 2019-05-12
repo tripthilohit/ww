@@ -16,7 +16,7 @@ var smallestNumber = function(range, n)
 	a.sort()
 	console.log(a)
 	console.log("The "+n+" smallest random number is: ")
-return a[n]
+return a[n-1]
 
 }
 

@@ -43,7 +43,7 @@ driver
 
 }
 //9. Create a method to print the number of meeting the each person(under the scheduled time) has a particular day of the week
-
+// glbals.js contains user input for the 'day' for which you want the meeting count for each person
 var printMeetings = function (driver) {
     function getDaysCount(elements) {
     	 elements.value.forEach(function (element,i) {
@@ -71,6 +71,7 @@ var printMeetings = function (driver) {
 									//console.log(result)
 										if(array.length===resu.value.length)
 										{
+											console.log("Number of meetings for each person on "+driver.globals.userNames.day+ " is")
 											for (var k in result){
 											console.log(k+" "+result[k]);
 										}}

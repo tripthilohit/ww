@@ -5,9 +5,9 @@
 
   <testsuite name="test2"
     errors="0" failures="0" hostname="" id="" package="test2" skipped="0"
-    tests="2" time="7.054" timestamp="Sat, 11 May 2019 21:14:04 GMT">
+    tests="2" time="7.250" timestamp="Sun, 12 May 2019 19:16:51 GMT">
   
-    <testcase name="usingSelectorsDemo" classname="test2" time="6.429" assertions="7">
+    <testcase name="usingSelectorsDemo" classname="test2" time="6.616" assertions="7">
 
     
 
@@ -24,7 +24,7 @@
     
     </testcase>
   
-    <testcase name="printMeetings" classname="test2" time="0.6250" assertions="0">
+    <testcase name="printMeetings" classname="test2" time="0.6340" assertions="0">
     </testcase>
   
 
