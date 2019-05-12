@@ -50,7 +50,7 @@ In order to run the driver succesfully make sure you have changed runner.js root
 node nightwatch.js tests/test2.js
 ```
 
-# Results of the test
+# Results of the tests
 
 ## Test 1
 
@@ -62,4 +62,5 @@ node nightwatch.js tests/test2.js
 
 ## Test 3
 
+<img width="754" alt="Screen Shot 2019-05-12 at 3 22 41 PM" src="https://user-images.githubusercontent.com/38136831/57586865-08b7f480-74ca-11e9-89c3-4224f06a4a68.png">
 
