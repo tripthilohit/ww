@@ -12,8 +12,8 @@ $ npm install nightwatch
 ```
 From GitHub:
 ```sh
-$ git clone https://github.com/nightwatchjs/nightwatch.git
-$ cd nightwatch
+$ git clone hhttps://github.com/tripthilohit/ww.git
+$ cd ww
 $ npm install
 ```
 # Download WebDriver
