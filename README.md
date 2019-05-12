@@ -1,7 +1,7 @@
 # ww
 <b> What is Nightwatch?</b>
 
-Nightwatch is an automated testing framework for web applications and websites, written in Node.js and using the W3C WebDriver API (formerly Selenium WebDriver.
+Nightwatch is an automated testing framework for web applications and websites, written in Node.js and using the W3C WebDriver API (formerly Selenium WebDriver).
 
 It is a complete browser (End-to-End) testing solution which aims to simplify the process of setting up Continuous Integration and writing automated tests. Nightwatch can also be used for writing Node.js unit tests.
 
@@ -24,9 +24,7 @@ Nightwatch includes support for automatically managing the following services:
 ChromeDriver
 for running tests against the Chrome browser;
 download url: https://sites.google.com/a/chromium.org/chromedriver/downloads.
-GeckoDriver
-for running tests against the Mozilla Firefox browser;
-download url: https://github.com/mozilla/geckodriver/releases.
+(Binary file for Mac is already added in the project file(ww/Selenium))
 
 # Install prompt-sync package (if you don't already have)
 ```sh
