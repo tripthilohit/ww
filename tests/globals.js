@@ -1,8 +1,7 @@
 var userNames = {
   URL: 'https://www.weightwatchers.com/us/',
-  day: 'TUE',
-memberEmail: 'tyrion@yopmail.com',
-  memberPassword: '12345678'
+  day: 'TUE'
+
 }
 
 module.exports = {
